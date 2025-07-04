@@ -52,17 +52,17 @@ createApp({
                 {
                     title: 'Install',
                     description: 'Add AIShares to your Chrome browser with one click',
-                    icon: 'fas fa-download'
+                    image: '/assets/step1.png'
                 },
                 {
                     title: 'Tick',
                     description: 'Select the messages you want to capture with visual checkboxes',
-                    icon: 'fas fa-mouse-pointer'
+                    image: '/assets/step2.png'
                 },
                 {
                     title: 'Export',
                     description: 'Your PNG drops straight into Downloads folder instantly',
-                    icon: 'fas fa-file-image'
+                    image: '/assets/step3.png'
                 }
             ],
             

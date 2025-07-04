@@ -636,6 +636,21 @@ body {
     opacity: 0.3;
 }
 
+.step-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.step-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.3);
+}
+
 /* Testimonials Section */
 .testimonials {
     padding: 100px 0;
