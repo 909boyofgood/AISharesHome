@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIShares - Turn AI Chats into Stunning PNG Snapshots</title>
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-download"></i>
+                    <span>AIShares</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How it Works</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#faq">FAQ</a>
+                    <button class="cta-button">
+                        <i class="fab fa-chrome"></i>
+                        Add to Chrome
+                    </button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+            
+                    <h1 class="hero-title">
+                        Turn AI chats into <span class="highlight">PNG snapshots</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        major AI Chat platforms · Visual selection · 2× HD export · Zero-distraction UI
+                    </p>
+                    <!-- <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stars">
+                                <i class="fas fa-star" v-for="n in 5" :key="n"></i>
+                            </div>
+                            <span>4.9/5 | Loved by <strong>26,000+</strong> creators</span>
+                        </div>
+                    </div> -->
+                    <div class="hero-cta">
+                        <button class="primary-button" @click="installExtension">
+                            <i class="fab fa-chrome"></i>
+                            Add AIShares to Chrome
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <p class="cta-note">Free · Privacy-first</p>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="chat-preview">
+                            <div class="chat-header">
+                                <div class="chat-title">ChatGPT</div>
+                                <div class="export-button">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                            </div>
+                            <div class="chat-messages">
+                                <div class="message user-message">
+                                    <div class="content">How do I create a Vue.js component?</div>
+                                    <div class="checkbox"><i class="fas fa-check"></i></div>
+                                </div>
+                                <div class="message ai-message">
+                                    <div class="content">Here's how to create a Vue.js component...</div>
+                                    <div class="checkbox"><i class="fas fa-check"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>✨ Amazing <em>Features</em></h2>
+                </div>
+                <div class="supported-platforms">
+                    <p class="platforms-label">Works seamlessly with</p>
+                    <div class="platforms-icons">
+                        <div class="platform-item">
+                            <div class="platform-icon chatgpt">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/openai.svg" alt="ChatGPT" />
+                            </div>
+                            <span>ChatGPT</span>
+                        </div>
+                        <div class="platform-item">
+                            <div class="platform-icon claude">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/anthropic.svg" alt="Claude" />
+                            </div>
+                            <span>Claude</span>
+                        </div>
+                        <div class="platform-item">
+                            <div class="platform-icon gemini">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/googlegemini.svg" alt="Gemini" />
+                            </div>
+                            <span>Gemini</span>
+                        </div>
+                        <div class="platform-item">
+                            <div class="platform-icon bing">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/microsoftbing.svg" alt="Bing" />
+                            </div>
+                            <span>Bing</span>
+                        </div>
+                        <div class="platform-item">
+                            <div class="platform-icon grok">
+                                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons@latest/icons/x.svg" alt="Grok" />
+                            </div>
+                            <span>Grok</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card" v-for="feature in features" :key="feature.id">
+                        <div class="feature-icon">
+                            <i :class="feature.icon"></i>
+                        </div>
+                        <h3>{{ feature.title }}</h3>
+                        <p>{{ feature.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🚀 Three-step magic</h2>
+                </div>
+                <div class="steps-container">
+                    <div class="step" v-for="(step, index) in steps" :key="index">
+                        <div class="step-number">{{ index + 1 }}</div>
+                        <div class="step-content">
+                            <h3>{{ step.title }}</h3>
+                            <p>{{ step.description }}</p>
+                        </div>
+                        <div class="step-visual">
+                            <i :class="step.icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>🥰 What users say</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card" v-for="testimonial in testimonials" :key="testimonial.id">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="testimonial-text">{{ testimonial.text }}</p>
+                        <div class="testimonial-author">
+                            <strong>{{ testimonial.author }}</strong>
+                            <span>{{ testimonial.role }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>❓ Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item" v-for="(faq, index) in faqs" :key="index">
+                        <div class="faq-question" @click="toggleFaq(index)">
+                            <h3>{{ faq.question }}</h3>
+                            <i class="fas fa-chevron-down" :class="{ 'rotated': faq.isOpen }"></i>
+                        </div>
+                        <div class="faq-answer" :class="{ 'open': faq.isOpen }">
+                            <p>{{ faq.answer }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="final-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready for one-click chat snapshots?</h2>
+                    <button class="primary-button large" @click="installExtension">
+                        <i class="fab fa-chrome"></i>
+                        Install AIShares for Chrome
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <p class="cta-subtitle">Free · Blue-themed & adorable</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <i class="fas fa-download"></i>
+                        <span>AIShares</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2025 AIShares. Made with ❤️ for the AI community.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "name": "aishares-website",
+  "version": "1.0.0",
+  "description": "AIShares Chrome Extension Official Website - Turn AI chats into stunning PNG snapshots",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Building static site...' && mkdir -p dist && cp -r *.html *.css *.js *.json dist/",
+    "preview": "open http://localhost:8000",
+    "lint": "echo 'Linting files...' && echo 'No linting configured yet'",
+    "deploy": "echo 'Deployment script not configured yet'"
+  },
+  "keywords": [
+    "chrome-extension",
+    "ai",
+    "chatgpt",
+    "claude",
+    "screenshot",
+    "png",
+    "export",
+    "vue",
+    "javascript",
+    "website"
+  ],
+  "author": "AIShares Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aishares/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aishares/website/issues"
+  },
+  "homepage": "https://aishares.com",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "vue": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
