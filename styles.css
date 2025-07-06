@@ -633,12 +633,12 @@ body {
 .step-visual {
     font-size: 48px;
     color: #667eea;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 .step-image {
-    width: 120px;
-    height: 120px;
+    width: 400px;
+    height: 200px;
     object-fit: contain;
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
