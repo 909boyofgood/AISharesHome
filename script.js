@@ -138,7 +138,7 @@ createApp({
          */
         installExtension() {
             // 这里应该是实际的Chrome Web Store链接
-            const chromeStoreUrl = 'https://chrome.google.com/webstore/category/extensions';
+            const chromeStoreUrl = 'https://chromewebstore.google.com/detail/aishares/heanjkhnidnekbcegmdodgleikdmecdj';
             window.open(chromeStoreUrl, '_blank');
             
             // 添加点击追踪
