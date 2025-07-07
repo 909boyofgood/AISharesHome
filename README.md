@@ -1,212 +1,176 @@
-# AIShares Official Website
+# AIShares - Chrome Extension
 
 🎯 **Turn AI chats into stunning PNG snapshots—in one click**
 
-This is the official website for AIShares Chrome Extension, built with Vue.js and modern web technologies.
+AIShares is a powerful Chrome extension that transforms your AI conversations into beautiful, high-quality PNG images. Whether you're sharing insights from ChatGPT, Claude, Gemini, or other AI platforms, AIShares makes it effortless to capture and share your most valuable conversations.
 
-## ✨ Features
+## ✨ Key Features
 
-- **Modern Design**: Clean, professional design with light blue theme
-- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
-- **Vue.js Integration**: Interactive components and smooth animations
-- **Performance Optimized**: Fast loading with lazy loading and optimized assets
-- **SEO Friendly**: Semantic HTML structure and meta tags
-- **Accessibility**: WCAG compliant design patterns
+- **Universal AI Platform Support**: Works seamlessly with ChatGPT, Claude, Gemini, Grok, Bing Copilot, and more
+- **Visual Selection Interface**: Intuitive checkboxes appear beside every message for precise selection
+- **Crystal Clear 2× HD Export**: Built-in 2× scaling and antialiasing for razor-sharp image quality
+- **Smart UI Cleanup**: Automatically hides buttons, inputs, and ads for clean, distraction-free exports
+- **Floating Action Button**: Convenient blue bubble that follows your scroll for instant access
+- **Privacy-First Design**: Manifest V3 compliant with minimal permissions, no background scripts, and zero data collection
 
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.x (for local development server)
-- Modern web browser (Chrome, Firefox, Safari, Edge)
+## 🚀 Installation & Usage
 
 ### Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/aishares/website.git
-cd website
-```
+1. **Install from Chrome Web Store**:
+   - Visit the [AIShares Chrome Web Store page](https://chromewebstore.google.com/detail/aishares/heanjkhnidnekbcegmdodgleikdmecdj)
+   - Click "Add to Chrome"
+   - Confirm the installation
 
-2. Start the development server:
-```bash
-npm start
-# or
-python3 -m http.server 8000
-```
+2. **Manual Installation** (for developers):
+   - Download the extension files
+   - Open Chrome and go to `chrome://extensions/`
+   - Enable "Developer mode"
+   - Click "Load unpacked" and select the extension folder
 
-3. Open your browser and visit:
-```
-http://localhost:8000
-```
+### How to Use
 
-## 📁 Project Structure
+1. **Navigate** to any supported AI chat platform
+2. **Select** messages using the visual checkboxes (⌘/Ctrl+A to select all)
+3. **Export** by clicking the floating blue action button
+4. **Download** your PNG image instantly to your Downloads folder
 
-```
-AISharesHome/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles with light blue theme
-├── script.js           # Vue.js application logic
-├── package.json        # Project configuration
-├── README.md          # Project documentation
-└── .trae/             # Trae AI configuration
-    └── rules/
-        └── project_rules.md
-```
+## 🌐 Supported Platforms
 
-## 🎨 Design System
+- **ChatGPT** (chat.openai.com)
+- **Claude** (claude.ai)
+- **Google Gemini** (gemini.google.com)
+- **Grok** (x.ai)
+- **Bing Copilot** (copilot.microsoft.com)
 
-### Color Palette
-- **Primary Blue**: `#667eea` - Main brand color
-- **Secondary Purple**: `#764ba2` - Gradient accent
-- **Light Blue**: `#4299e1` - CTA buttons
-- **Background**: `#f7fafc` - Light sections
-- **Text**: `#1a202c` - Primary text
-- **Muted**: `#4a5568` - Secondary text
+*More platforms are continuously being added based on user feedback.*
 
-### Typography
-- **Font Family**: Inter (Google Fonts)
-- **Weights**: 300, 400, 500, 600, 700
-- **Responsive scaling**: Fluid typography
+## 🎯 Use Cases
 
-### Components
-- **Navigation**: Fixed header with blur effect
-- **Hero Section**: Gradient background with floating card
-- **Feature Cards**: Hover effects and icons
-- **Testimonials**: Quote cards with author info
-- **FAQ**: Accordion-style expandable items
-- **CTA Buttons**: Gradient backgrounds with hover animations
+### Content Creation
+- **Social Media**: Share AI insights on Twitter, LinkedIn, and other platforms
+- **Blog Posts**: Include AI conversation screenshots in your articles
+- **Presentations**: Add AI-generated content to slides and reports
 
-## 🛠️ Development
+### Education & Research
+- **Academic Papers**: Document AI assistance in research
+- **Study Materials**: Create visual study guides from AI explanations
+- **Tutorials**: Show step-by-step AI problem-solving processes
 
-### Available Scripts
+### Professional Work
+- **Documentation**: Capture AI-assisted code reviews and explanations
+- **Client Reports**: Include AI analysis and recommendations
+- **Team Collaboration**: Share AI brainstorming sessions with colleagues
 
-- `npm start` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Open preview in browser
-- `npm run lint` - Run code linting
-- `npm run deploy` - Deploy to production
+## ⚙️ Technical Specifications
 
-### Code Structure
+### Browser Compatibility
+- **Chrome**: Version 88+ (officially supported)
+- **Edge**: Chromium-based versions
+- **Brave**: Full compatibility
+- **Other Chromium browsers**: Generally compatible
 
-#### HTML (`index.html`)
-- Semantic HTML5 structure
-- Vue.js template syntax
-- Accessibility attributes
-- Meta tags for SEO
+### Performance
+- **Lightweight**: Minimal resource usage
+- **Fast Export**: Optimized html2canvas implementation
+- **High Quality**: 2× scaling for crisp, professional images
+- **Local Processing**: All rendering happens in your browser
 
-#### CSS (`styles.css`)
-- Mobile-first responsive design
-- CSS Grid and Flexbox layouts
-- Custom animations and transitions
-- CSS variables for theming
+### Privacy & Security
+- **Manifest V3**: Latest Chrome extension security standards
+- **Minimal Permissions**: Only requests necessary access
+- **No Data Collection**: Zero telemetry or user tracking
+- **Local Processing**: No data ever leaves your browser
 
-#### JavaScript (`script.js`)
-- Vue.js 3 Composition API
-- Interactive components
-- Smooth scrolling navigation
-- Performance optimizations
+## 🔧 Keyboard Shortcuts
 
-## 📱 Responsive Breakpoints
+- **⌘/Ctrl + A**: Select all visible messages
+- **Esc**: Cancel current selection
+- **Click + Drag**: Multi-select messages
+- **Shift + Click**: Select range of messages
 
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: > 1024px
+## 🎨 Export Options
 
-## 🔧 Customization
+### Image Quality
+- **2× HD Rendering**: Crystal-clear output for professional use
+- **Automatic Scaling**: Optimized for different screen sizes
+- **Clean Layout**: Removes UI clutter for focused content
 
-### Changing Colors
-Update the CSS custom properties in `styles.css`:
+### File Format
+- **PNG**: High-quality with transparency support
+- **Instant Download**: Files saved directly to Downloads folder
+- **Optimized Size**: Balanced quality and file size
 
-```css
-:root {
-  --primary-color: #667eea;
-  --secondary-color: #764ba2;
-  --accent-color: #4299e1;
-}
-```
+## ❓ Frequently Asked Questions
 
-### Adding New Sections
-1. Add HTML structure in `index.html`
-2. Add corresponding styles in `styles.css`
-3. Add Vue.js logic in `script.js` if needed
+### Which browsers are supported?
+Chrome 88+ officially; Edge, Brave, and any Chromium-based browser via the Chrome Web Store.
 
-### Modifying Content
-Update the data properties in the Vue.js app:
+### No checkboxes on my screen—why?
+Make sure you're on one of the supported AI platforms. Refresh the page and disable conflicting user scripts or themes if needed.
 
-```javascript
-data() {
-  return {
-    features: [...],
-    testimonials: [...],
-    faqs: [...]
-  }
-}
-```
+### Image feels huge—help!
+Long conversations can create large images. Try exporting in smaller chunks or use an online image compressor.
 
-## 🚀 Deployment
+### Does AIShares upload my chats?
+Never. All processing happens locally in your browser using html2canvas. Nothing is sent to our servers.
 
-### Static Hosting
-The website is a static site and can be deployed to:
-- **Netlify**: Drag and drop deployment
-- **Vercel**: Git integration
-- **GitHub Pages**: Free hosting
-- **AWS S3**: Scalable hosting
+### Will you add PDF or Markdown export?
+It's on our roadmap! We're constantly working on new features based on user feedback.
 
-### Build Process
-```bash
-npm run build
-```
+## 🔄 Roadmap
 
-This creates a `dist/` folder with optimized files ready for deployment.
+- **PDF Export**: Coming soon
+- **Markdown Export**: In development
+- **Custom Themes**: Planned feature
+- **Batch Export**: Under consideration
+- **More AI Platforms**: Continuous expansion
 
-## 🔍 SEO Optimization
+## 🤝 Contributing & Feedback
 
-- **Meta Tags**: Title, description, keywords
-- **Open Graph**: Social media sharing
-- **Structured Data**: JSON-LD markup
-- **Sitemap**: XML sitemap generation
-- **Performance**: Optimized loading times
+### Bug Reports
+If you encounter any issues:
+1. Check our [GitHub Issues](https://github.com/909boyofgood/AISharesHomeissues)
+2. Create a new issue with detailed description
+3. Include browser version and platform information
 
-## 📊 Analytics
+### Feature Requests
+We love hearing from our users! Submit feature requests through:
+- GitHub Issues with the "enhancement" label
+- Email us at brizer@163.com
+- Join our Discord community
 
-The website includes event tracking for:
-- CTA button clicks
-- Section scrolling
-- FAQ interactions
-- Mobile menu usage
+### Beta Testing
+Interested in testing new features? Join our beta program for early access to upcoming releases.
 
-Integrate with Google Analytics by adding your tracking ID.
+## 📄 License & Privacy
 
-## 🤝 Contributing
+- **Extension License**: MIT License
+- **Privacy Policy**: No data collection or tracking
+- **Open Source**: Core functionality available on GitHub
+- **Transparency**: Full disclosure of permissions and functionality
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit changes: `git commit -am 'Add new feature'`
-4. Push to branch: `git push origin feature/new-feature`
-5. Submit a pull request
+## 🆘 Support & Community
 
-## 📄 License
+### Get Help
+- **Documentation**: This README and our website
+- **Email Support**: brizer@163.com
+- **GitHub Issues**: [Report bugs and request features](https://github.com/909boyofgood/AISharesHome/issues)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-- **Documentation**: Check this README
-- **Issues**: [GitHub Issues](https://github.com/aishares/website/issues)
-- **Email**: support@aishares.com
-- **Discord**: [Join our community](https://discord.gg/aishares)
+### Stay Updated
+- **Chrome Web Store**: Automatic updates
+- **GitHub**: Follow our repository for development updates
 
 ## 🙏 Acknowledgments
 
-- **Vue.js**: Reactive framework
-- **Font Awesome**: Icon library
-- **Google Fonts**: Typography
-- **Unsplash**: Stock photography
-- **Community**: Beta testers and contributors
+- **html2canvas**: Core screenshot functionality
+- **Chrome Extension APIs**: Platform foundation
+- **AI Community**: Feedback and feature suggestions
+- **Beta Testers**: Early adopters who helped shape the product
+- **Open Source Contributors**: Community-driven improvements
 
 ---
 
 **Made with ❤️ by the AIShares team**
 
-*Turn your AI conversations into beautiful, shareable images with just one click!*
+*Transform your AI conversations into beautiful, shareable images with just one click!*
