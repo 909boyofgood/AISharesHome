@@ -1,0 +1,27 @@
+# Robots.txt for AIShares - Chrome Extension Website
+# https://ai-shares-home.vercel.app/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ai-shares-home.vercel.app/sitemap.xml
+
+# Allow all search engines to crawl the site
+# No restrictions as this is a public marketing website
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block access to sensitive files (if any)
+# Currently no restrictions needed for this marketing site

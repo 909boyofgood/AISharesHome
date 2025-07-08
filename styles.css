@@ -398,6 +398,15 @@ body {
     margin-bottom: 20px;
 }
 
+.section-description {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
 /* Supported Platforms */
 .supported-platforms {
     text-align: center;
