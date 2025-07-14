@@ -13,7 +13,7 @@ createApp({
                     id: 1,
                     icon: 'fas fa-globe',
                     title: 'All-in-one coverage',
-                    description: 'ChatGPT, Claude, Gemini, Grok, Bing Copilot —pick any chat, any time'
+                    description: 'ChatGPT, Claude, Gemini, Grok, Bing Copilot, DeepSeek —pick any chat, any time'
                 },
                 {
                     id: 2,

@@ -504,6 +504,13 @@ body {
     filter: brightness(0) invert(1);
 }
 
+.platform-icon.deepseek {
+}
+
+.platform-icon.deepseek img {
+    filter: none;
+}
+
 .platform-item:hover .platform-icon {
     transform: scale(1.1);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
