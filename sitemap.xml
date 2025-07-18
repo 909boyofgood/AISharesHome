@@ -6,20 +6,10 @@
         http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
     ">
-  <!-- 主页 -->
   <url>
     <loc>https://ai-shares-home.vercel.app/</loc>
     <lastmod>2025-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <!-- 如有其它独立页面，可按下面格式继续添加 -->
-  <!--
-  <url>
-    <loc>https://ai-shares-home.vercel.app/pricing</loc>
-    <lastmod>2025-07-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  -->
 </urlset>
